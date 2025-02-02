@@ -36,7 +36,7 @@ namespace BlockedCountriesAPI.Controllers
 
             return Ok(new { CountryCode = result.CountryCode, CountryName = result.CountryName, ISP = result.ISP });
         }
-
+         
         [HttpGet("check-block")]
         public async Task<IActionResult> CheckIfIPBlocked()
         {
